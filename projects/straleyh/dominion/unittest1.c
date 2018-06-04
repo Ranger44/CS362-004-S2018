@@ -1,33 +1,48 @@
  #include "dominion.h"
  #include "dominion_helpers.h"
+ #include <string.h>
  #include <stdio.h>
  #include <stdlib.h>
+ #include <assert.h>
  #include "rngs.h"
   
 void testIsGameOver() {
-	printf("Unittest 1: Testing isGameOver()\n");
+	printf("\n-- Unittest 1: Testing isGameOver() -- \n");
+	int i = 0;
+	int j, r;
 	struct gameState testGame;
 	int k[10] = {adventurer, council_room, feast, gardens, mine, remodel, 
 		smithy, village, baron, great_hall};
-	int randomSeed = rand() % 10;
-	int testResult = 0;
-	printf("Random seed: %d\n", randomSeed);
-	testResult = initializeGame(2, k, randomSeed, &testGame);
+	int seed = 1000;
+	int numPlayers = 3;
 	
-	if(testResult != 0) {
-		printf("Initialization failed, unable to test shuffle");
-	}
-	
-	for(int i = 25; i >= 0; i--) {
-		testGame.supplyCount[i] = i;
-		result = isGameOver(&testGame);
-		if((i != 0 && result == 1) || (i == 0 && result != 0)) {
-			printf("Failed\n");
-			return;
-		}
-	}
-	
-	printf("Passed\n");
+    for (i = 0; i <= 3; i++) {
+        memset(&testGame, 23, sizeof(struct gameState));   
+        r = initializeGame(numPlayers, k, seed, &testGame);
+        assert(r != -1); 
+        memcpy(testGame.hand[i], k, sizeof(int) * 10); 
+        
+        testGame.supplyCount[province] = i;
+        testGame.supplyCount[i] = 0; 
+
+        if( i == 0 ){
+            printf("  Expected result : game over\n");
+            r = 1;
+        }
+        else if( i == 3 ){
+            printf("  Expected result : game over\n");
+            r = 1;
+        }
+        else{
+            printf("  Expected result : game not over\n");
+            r = 0;
+        }
+        j = isGameOver(&testGame);
+        assert(j == r);
+        printf("   - PASSED -\n");
+    }
+	printf(" ALL TESTS PASSED\n");
+
 	return;
 }
 

@@ -1,0 +1,16 @@
+
+-- Card test 1: Testing ADVENTURER -- 
+  Expected result: deck count correct
+   - FAILED -
+  Expected result: hand count correct
+   - FAILED -
+  Expected result: Adventurer card added to players hand
+   - PASSED -
+  Expected result: Adventurer card played
+   - FAILED -
+  Expected result: Adventurer card count matches in pre and post
+   - FAILED -
+  Expected result: Adventurer card discarded
+   - PASSED -
+  Expected result: Two actions added
+   - FAILED -

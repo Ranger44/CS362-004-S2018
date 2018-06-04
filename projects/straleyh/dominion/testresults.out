@@ -1,3 +1,319 @@
+Testing drawCard.
+RANDOM TESTS.
+ALL TESTS OK
+Testing buyCard.
+RANDOM TESTS.
+ALL TESTS OK
+
+-- Unittest 1: Testing isGameOver() -- 
+  Expected result : game over
+   - PASSED -
+  Expected result : game not over
+   - PASSED -
+  Expected result : game not over
+   - PASSED -
+  Expected result : game over
+   - PASSED -
+ ALL TESTS PASSED
+
+-- Unittest 2: Testing updateCoins() -- 
+ ALL TESTS PASSED
+
+-- Unittest 3: Testing discardCard() -- 
+ ALL TESTS PASSED
+
+-- Unittest 4: Testing getCost() -- 
+  Expected result : 6 == 6
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 6 == 6
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 6 == 6
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+ ALL TESTS PASSED
+
+-- Card test 1: Testing ADVENTURER -- 
+  Expected result: deck count correct
+   - FAILED -
+  Expected result: hand count correct
+   - FAILED -
+  Expected result: Adventurer card added to players hand
+   - PASSED -
+  Expected result: Adventurer card played
+   - FAILED -
+  Expected result: Adventurer card count matches in pre and post
+   - FAILED -
+  Expected result: Adventurer card discarded
+   - PASSED -
+  Expected result: Two actions added
+   - FAILED -
+
+-- Card test 2: Testing VILLAGE -- 
+  Expected result: Village card added to hand
+   - PASSED -
+  Expected result: player played Village card
+   - FAILED -
+  Expected result: Village card discarded
+   - PASSED -
+  Expected result: Two actions added
+   - PASSED -
+
+-- Card test 3: Testing GREAT HALL -- 
+  Expected result: hand count correct
+   - PASSED -
+  Expected result: player played Great Hall card
+   - PASSED -
+  Expected result: Great Hall card discarded
+   - PASSED -
+  Expected result: One action added
+   - PASSED -
+
+-- Card test 4: Testing SMITHY -- 
+  Expected result: hand count = 4
+   - FAILED -
+  Expected result: smithy card successfully added to player's hand
+   - PASSED -
+  Expected result: player played Smithy card
+   - FAILED -
+  Expected result: card count = -1
+   - FAILED -
+  Expected result: player discarded Smithy card
+   - PASSED -
+-------------------- Testing Card: Smithy ------------------
+
+------------------------ RESULTS -------------------------
+PASSED TESTS: 0
+FAILED TESTS: 2000
+
+--------------------- FAILURE REPORT ---------------------
+cardEffect() failed: 0
+discardCard() failed: 0
+drawCard() failed: 0
+Hand/Deck mismatch: 2000
+
+----------------------------------------------------------
+-------------------- Testing Card: Village ------------------
+
+------------------------ RESULTS -------------------------
+PASSED TESTS: 10000
+FAILED TESTS: 0
+----------------- PASSED ALL RANDOM TESTS -----------------
+
+File 'dominion.c'
+No executable lines
+Removing 'dominion.c.gcov'
+
+Testing drawCard.
+RANDOM TESTS.
+ALL TESTS OK
+Testing buyCard.
+RANDOM TESTS.
+ALL TESTS OK
+
+-- Unittest 1: Testing isGameOver() -- 
+  Expected result : game over
+   - PASSED -
+  Expected result : game not over
+   - PASSED -
+  Expected result : game not over
+   - PASSED -
+  Expected result : game over
+   - PASSED -
+ ALL TESTS PASSED
+
+-- Unittest 2: Testing updateCoins() -- 
+ ALL TESTS PASSED
+
+-- Unittest 3: Testing discardCard() -- 
+ ALL TESTS PASSED
+
+-- Unittest 4: Testing getCost() -- 
+  Expected result : 6 == 6
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 6 == 6
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 6 == 6
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 5 == 5
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+  Expected result : 4 == 4
+   - PASSED -
+  Expected result : 3 == 3
+   - PASSED -
+ ALL TESTS PASSED
+
+-- Card test 1: Testing ADVENTURER -- 
+  Expected result: deck count correct
+   - FAILED -
+  Expected result: hand count correct
+   - FAILED -
+  Expected result: Adventurer card added to players hand
+   - PASSED -
+  Expected result: Adventurer card played
+   - FAILED -
+  Expected result: Adventurer card count matches in pre and post
+   - FAILED -
+  Expected result: Adventurer card discarded
+   - PASSED -
+  Expected result: Two actions added
+   - FAILED -
+
+-- Card test 2: Testing VILLAGE -- 
+  Expected result: Village card added to hand
+   - PASSED -
+  Expected result: player played Village card
+   - FAILED -
+  Expected result: Village card discarded
+   - PASSED -
+  Expected result: Two actions added
+   - PASSED -
+
+-- Card test 3: Testing GREAT HALL -- 
+  Expected result: hand count correct
+   - PASSED -
+  Expected result: player played Great Hall card
+   - PASSED -
+  Expected result: Great Hall card discarded
+   - PASSED -
+  Expected result: One action added
+   - PASSED -
+
+-- Card test 4: Testing SMITHY -- 
+  Expected result: hand count = 4
+   - FAILED -
+  Expected result: smithy card successfully added to player's hand
+   - PASSED -
+  Expected result: player played Smithy card
+   - FAILED -
+  Expected result: card count = -1
+   - FAILED -
+  Expected result: player discarded Smithy card
+   - PASSED -
+-------------------- Testing Card: Smithy ------------------
+
+------------------------ RESULTS -------------------------
+PASSED TESTS: 0
+FAILED TESTS: 2000
+
+--------------------- FAILURE REPORT ---------------------
+cardEffect() failed: 0
+discardCard() failed: 0
+drawCard() failed: 0
+Hand/Deck mismatch: 2000
+
+----------------------------------------------------------
+-------------------- Testing Card: Village ------------------
+
+------------------------ RESULTS -------------------------
+PASSED TESTS: 10000
+FAILED TESTS: 0
+----------------- PASSED ALL RANDOM TESTS -----------------
+
+File 'dominion.c'
+Lines executed:33.04% of 563
+Creating 'dominion.c.gcov'
+
         -:    0:Source:dominion.c
         -:    0:Graph:dominion.gcno
         -:    0:Data:dominion.gcda
